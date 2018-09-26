@@ -22,7 +22,7 @@ public class OpenMRSTests extends BaseClass{
 	{	
 		HelperClass helper = new HelperClass(driver);
 		FindAPatientRecordPage fPage = new FindAPatientRecordPage(driver);
-
+		System.out.println("in find a patient record");
 		helper.login(username,password);
 		fPage.navigatetoFindAPatientPage();
 		boolean result = fPage.findAPatientRecord(patientName);
